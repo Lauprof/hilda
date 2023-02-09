@@ -10,10 +10,7 @@ background:rgba(210,224,220,0.4);
 
 width: 100vw;
 height:120px;
-background-color: white;
 
-
-border: 1px solid red;
 overflow: hidden;
 
 }
@@ -138,6 +135,9 @@ height:auto;
 }
 .new{
 width:97%;
+}
+#start{
+  height:50px;
 }
 #start h1{
 font-size:20px;
