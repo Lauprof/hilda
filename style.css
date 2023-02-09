@@ -1,0 +1,108 @@
+*{
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+}
+body{
+background:rgba(210,224,220,0.4);
+}
+#start{
+
+width: 100vw;
+height:120px;
+background-color: white;
+
+
+border: 1px solid red;
+overflow: hidden;
+
+}
+#start h1{
+    letter-spacing: 10px;
+    color: teal;
+    text-align: center;
+    text-transform: uppercase;
+    animation: size 10s infinite linear ;
+    font-family: 'Caveat';
+    font-weight: bolder;
+    animation-fill-mode: forwards;
+    
+    
+}
+@media  screen and (max-width:768px){
+img{
+height:auto;
+}
+.new{
+width:97%;
+}
+#start h1{
+font-size:20px;
+letter-spacing:2px;
+}
+
+#start>h1::first-letter{
+    color:red;
+    font-size: 1.5em;
+    font-family: 'Courier New', Courier, monospace;
+    
+}
+}
+@keyframes size {
+    0%{
+        
+        transform: translateX(100%);
+    }
+    100%{
+        
+        transform: translateX(-100%);
+    }
+}
+
+#start>h1::first-letter{
+    color:red;
+    font-size: 4em;
+    font-family: 'Courier New', Courier, monospace;
+    
+}
+.pic{
+    width:100%;
+    
+}
+img{
+    width:33.33%;
+    height:auto;
+    float: left;
+    transition: all 3s linear;
+}
+img:hover{
+    transform:scale(0.5);
+}
+.pic::after{
+    content: "";
+    display: block;
+    clear: both;
+    
+
+}
+
+    
+.new{
+    border:1px solid lightblue;
+    box-shadow: 2px 2px 15px black;
+    position: relative;
+    margin:auto auto;
+    width: 80%;
+    font-family:'Itim';
+    padding: 10px;
+}
+.new p{
+    text-align: center;
+    
+}
+.pictures img{
+    margin: auto auto;
+    position: absolute;
+    left: 50%;
+    right: 50%;
+}
