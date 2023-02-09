@@ -23,59 +23,46 @@ overflow: hidden;
     text-align: center;
     text-transform: uppercase;
     animation: size 10s infinite linear ;
-    font-family: 'Caveat';
+    font-family: 'Itim';
     font-weight: bolder;
     animation-fill-mode: forwards;
     
     
 }
-@media  screen and (max-width:768px){
-img{
-height:auto;
-}
-.new{
-width:97%;
-}
-#start h1{
-font-size:20px;
-letter-spacing:2px;
-}
-
-#start>h1::first-letter{
-    color:red;
-    font-size: 1.5em;
-    font-family: 'Courier New', Courier, monospace;
-    
-}
-}
 @keyframes size {
+
     0%{
+
         
         transform: translateX(100%);
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     }
     100%{
         
         transform: translateX(-100%);
+        font-family: Courier;
     }
 }
+.pictures img{
 
-#start>h1::first-letter{
-    color:red;
-    font-size: 4em;
-    font-family: 'Courier New', Courier, monospace;
-    
-}
-.pic{
-    width:100%;
-    
-}
-img{
     width:33.33%;
+
     height:auto;
     float: left;
     transition: all 3s linear;
 }
-img:hover{
+.pictures img:hover{
+    transform:scale(0.5);
+}
+.pict img{
+
+    width:33.33%;
+
+    height:auto;
+    float: left;
+    transition: all 3s linear;
+}
+.pict img:hover{
     transform:scale(0.5);
 }
 .pic::after{
@@ -105,4 +92,93 @@ img:hover{
     position: absolute;
     left: 50%;
     right: 50%;
+}
+#start>h1::first-letter{
+
+    color:red;
+
+    font-size: 4em;
+    font-family: 'Courier New', Courier, monospace;
+    
+}
+.pic{
+    width:100%;
+    overflow: hidden;
+    height:60vh;
+    border:1px solid lightblue;
+    border-radius: 10px;
+    
+}
+
+
+
+#wrapper{
+  display: flex;
+  animation: flow 8s infinite linear;
+  
+}
+
+@keyframes flow{
+  0%{transform: translateX(0%);}
+  25%{transform: translateX(0%);}
+  50%{transform: translateX(-100%);}
+  75%{transform: translateX(-100%);}
+  100%{transform: translateX(-180%);}
+
+  
+}
+
+#wrapper img{
+  width:100%;
+  height:60vh;
+}
+@media  screen and (max-width:768px){
+img{
+height:auto;
+}
+.new{
+width:97%;
+}
+#start h1{
+font-size:20px;
+letter-spacing:2px;
+}
+
+#start>h1::first-letter{
+    color:red;
+    font-size: 1.5em;
+    font-family: 'Courier New', Courier, monospace;
+    
+}
+}
+
+
+
+@media screen and (min-width:776px){
+  #wrapper img{
+    width: 100%;
+    height:70vh;
+  }
+  wrapper{
+
+  display: flex;
+
+  animation: flow 10s infinite linear;
+  
+}
+
+@keyframes flow{
+  0%{transform: translateX(0%);}
+  25%{transform: translateX(0%);}
+  50%{transform: translateX(-100%);}
+  75%{transform: translateX(-100%);}
+  100%{transform: translateX(-250%);}
+
+  
+}
+
+  .pic{
+    height:70vh;
+  }
+  
 }
